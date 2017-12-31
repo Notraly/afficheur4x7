@@ -16,11 +16,14 @@ const byte PIN_SEGMENT_G = 13;
 
 const byte PIN_POTENTIOMETRE = A1;
 
-
+void refresh(/* arguments */) {
+	/* code */
+}
 
 //bitRead(segments,position)
 void afficherSegments(int chiffre, boolean DP){
 	byte segments;
+  afficherSegments(true,"");
 	const byte INT_TO_SEGMENTS[] ={
 		0b1111110,
 		0b0110000,
